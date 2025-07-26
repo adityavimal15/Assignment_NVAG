@@ -1,20 +1,20 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const Header = () => {
   return (
     <header>
-      <Link className="nav" to="/stays">
+      <NavLink className="nav" to="/stays">
         Stays
-      </Link>
-      <Link className="nav" to="/home" data-state="active">
+      </NavLink>
+      <NavLink className="nav" to="/" data-state="active">
         Flights
-      </Link>
-      <Link className="nav" to="/cars">
+      </NavLink>
+      <NavLink className="nav" to="/cars">
         Cars
-      </Link>
-      <Link className="nav" to="/packages">
+      </NavLink>
+      <NavLink className="nav" to="/packages">
         Packages
-      </Link>
+      </NavLink>
     </header>
   );
 };

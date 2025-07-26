@@ -1,9 +1,13 @@
+body{
+  width: 400px;
+  overflow: hidden;
+}
+
 #root {
   max-width: 1185px;
   margin: 20px auto;
   border: 1px solid rgb(180, 180, 180);
   border-radius: 10px;
-  /* overflow-x: hidden; */
 }
 
 header {
@@ -137,7 +141,6 @@ input[type="date"] {
   width: 100%;
 }
 
-/* Traveller counter buttons */
 button {
   /* border: 1px solid #ddd; */
   background: white;
@@ -198,7 +201,9 @@ button:hover {
   .home {
     padding: 16px;
   }
-
+  #root {
+  max-width: 1000px;
+}
   .row {
     gap: 12px;
   }
@@ -261,7 +266,9 @@ button:hover {
   .home {
     padding: 8px;
   }
-
+  .traveler-counter {
+    width: 300px !important;
+}
   .body-nav {
     flex-direction: row;
     gap: 8px;
@@ -411,7 +418,7 @@ button:hover {
   #root {
   max-width: 440px;
 }
-.popover-content.bottom.center {
+.popover-content{
     overflow: hidden !important;
 }
 
@@ -529,4 +536,13 @@ a.nav {
   border: none;
   font-size: 16px;
   font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+  .home {
+    padding: 16px;
+  }
+  #root {
+  max-width: 900px;
+}
 }
